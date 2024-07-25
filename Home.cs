@@ -28,5 +28,6 @@ namespace Login
             addPlayer.FormClosed += (s, args) => mutex.ReleaseMutex();
             addPlayer.ShowDialog();
         }
+
     }
 }

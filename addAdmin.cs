@@ -7,11 +7,11 @@ using System.Security.Cryptography;
 
 namespace Login
 {
-    public partial class addPlayer : Form
+    public partial class addAdmin : Form
     {
         private const string ConnectionString = "Server=GAJADEERA\\SQLEXPRESS;Database=LoginSystem;Integrated Security=True;";
 
-        public addPlayer()
+        public addAdmin()
         {
             InitializeComponent();
         }
@@ -22,7 +22,6 @@ namespace Login
             string entredEmail = txtEmail.Text;
             string entredPassword = txtPassword.Text;
             string entredReTypePassword = txtReTypePassword.Text;
-            string entredGender = txtGender.Text;
 
             string emailPattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
 
@@ -34,7 +33,7 @@ namespace Login
 
                     string hashedPassword = HashPassword(entredPassword);
 
-                    const string insertQuery = "INSERT INTO Players (userName, email, password,gender) VALUES (@UserName, @Email, @Password,@Gender)";
+                    const string insertQuery = "INSERT INTO Admin (userName, email, password) VALUES (@UserName, @Email, @Password)";
 
                     using (SqlConnection connection = new SqlConnection(ConnectionString))
                     {
@@ -42,8 +41,6 @@ namespace Login
                         command.Parameters.AddWithValue("@UserName", entredUserName);
                         command.Parameters.AddWithValue("@Email", entredEmail);
                         command.Parameters.AddWithValue("@Password", hashedPassword);
-                        command.Parameters.AddWithValue("@ReTypePassword", entredReTypePassword);
-                        command.Parameters.AddWithValue("@Gender", entredGender);
 
                         connection.Open();
                         command.ExecuteNonQuery();
@@ -85,9 +82,10 @@ namespace Login
             }
         }
 
-        private void addPlayer_Load(object sender, EventArgs e)
+        private void btnCancel_Click_1(object sender, EventArgs e)
         {
-
+            addAdmin addAdmin = new addAdmin();
+            addAdmin.Close();
         }
     }
 }

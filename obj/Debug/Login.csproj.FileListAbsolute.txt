@@ -11,3 +11,4 @@ C:\Users\dayan\OneDrive\Desktop\My Project\Login\obj\Debug\Login.Login.resources
 C:\Users\dayan\OneDrive\Desktop\My Project\Login\obj\Debug\Login.addPlayer.resources
 C:\Users\dayan\OneDrive\Desktop\My Project\Login\obj\Debug\Login.Home.resources
 C:\Users\dayan\OneDrive\Desktop\My Project\Login\obj\Debug\Login.playerInformation.resources
+C:\Users\dayan\OneDrive\Desktop\My Project\Login\obj\Debug\Login.addAdmin.resources

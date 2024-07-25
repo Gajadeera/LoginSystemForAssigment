@@ -37,7 +37,7 @@ namespace Login
         {
             string hashedPassword = HashPassword(password);
 
-            const string query = "SELECT COUNT(1) FROM Players WHERE Username = @Username AND Password = @Password";
+            const string query = "SELECT COUNT(1) FROM admin WHERE Username = @Username AND Password = @Password";
 
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             using (SqlCommand command = new SqlCommand(query, connection))
@@ -80,6 +80,12 @@ namespace Login
             txtUserName.Clear();
             txtPassword.Clear();
             txtUserName.Focus();
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            addAdmin addAdmin = new addAdmin();
+            addAdmin.Show();
         }
     }
 }
