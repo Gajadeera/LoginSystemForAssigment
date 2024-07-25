@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addPlayer));
             this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.lbaddPayer = new System.Windows.Forms.Label();
             this.lbuserName = new System.Windows.Forms.Label();
@@ -35,20 +36,23 @@
             this.lbPassword = new System.Windows.Forms.Label();
             this.lbReTypePassword = new System.Windows.Forms.Label();
             this.lbGender = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.txtReTypePassword = new System.Windows.Forms.TextBox();
+            this.txtFullName = new System.Windows.Forms.TextBox();
+            this.txtBirthDay = new System.Windows.Forms.TextBox();
+            this.txtBattingStyle = new System.Windows.Forms.TextBox();
+            this.txtBowlingStyle = new System.Windows.Forms.TextBox();
             this.txtGender = new System.Windows.Forms.TextBox();
             this.btnSumit = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPlayingRole = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textRuns = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textWickets = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbPicture = new System.Windows.Forms.Label();
+            this.profilePicture = new System.Windows.Forms.PictureBox();
+            this.btnImageLoad = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
             this.SuspendLayout();
             // 
             // directorySearcher1
@@ -117,37 +121,37 @@
             this.lbGender.TabIndex = 5;
             this.lbGender.Text = "Gender";
             // 
-            // txtUsername
+            // txtFullName
             // 
-            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(302, 141);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(327, 30);
-            this.txtUsername.TabIndex = 6;
+            this.txtFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFullName.Location = new System.Drawing.Point(302, 141);
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.Size = new System.Drawing.Size(327, 30);
+            this.txtFullName.TabIndex = 6;
             // 
-            // txtEmail
+            // txtBirthDay
             // 
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(302, 192);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(327, 30);
-            this.txtEmail.TabIndex = 7;
+            this.txtBirthDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBirthDay.Location = new System.Drawing.Point(302, 192);
+            this.txtBirthDay.Name = "txtBirthDay";
+            this.txtBirthDay.Size = new System.Drawing.Size(327, 30);
+            this.txtBirthDay.TabIndex = 7;
             // 
-            // txtPassword
+            // txtBattingStyle
             // 
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(302, 238);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(327, 30);
-            this.txtPassword.TabIndex = 8;
+            this.txtBattingStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBattingStyle.Location = new System.Drawing.Point(302, 238);
+            this.txtBattingStyle.Name = "txtBattingStyle";
+            this.txtBattingStyle.Size = new System.Drawing.Size(327, 30);
+            this.txtBattingStyle.TabIndex = 8;
             // 
-            // txtReTypePassword
+            // txtBowlingStyle
             // 
-            this.txtReTypePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtReTypePassword.Location = new System.Drawing.Point(302, 293);
-            this.txtReTypePassword.Name = "txtReTypePassword";
-            this.txtReTypePassword.Size = new System.Drawing.Size(327, 30);
-            this.txtReTypePassword.TabIndex = 9;
+            this.txtBowlingStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBowlingStyle.Location = new System.Drawing.Point(302, 293);
+            this.txtBowlingStyle.Name = "txtBowlingStyle";
+            this.txtBowlingStyle.Size = new System.Drawing.Size(327, 30);
+            this.txtBowlingStyle.TabIndex = 9;
             // 
             // txtGender
             // 
@@ -160,7 +164,7 @@
             // btnSumit
             // 
             this.btnSumit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSumit.Location = new System.Drawing.Point(114, 657);
+            this.btnSumit.Location = new System.Drawing.Point(114, 696);
             this.btnSumit.Name = "btnSumit";
             this.btnSumit.Size = new System.Drawing.Size(248, 51);
             this.btnSumit.TabIndex = 11;
@@ -171,7 +175,7 @@
             // btnCancel
             // 
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(405, 657);
+            this.btnCancel.Location = new System.Drawing.Point(405, 696);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(224, 51);
             this.btnCancel.TabIndex = 12;
@@ -179,13 +183,13 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // textBox1
+            // txtPlayingRole
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(302, 347);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(327, 30);
-            this.textBox1.TabIndex = 14;
+            this.txtPlayingRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPlayingRole.Location = new System.Drawing.Point(302, 347);
+            this.txtPlayingRole.Name = "txtPlayingRole";
+            this.txtPlayingRole.Size = new System.Drawing.Size(327, 30);
+            this.txtPlayingRole.TabIndex = 14;
             // 
             // label1
             // 
@@ -197,13 +201,13 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Playing Role";
             // 
-            // textBox2
+            // textRuns
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(302, 457);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(327, 30);
-            this.textBox2.TabIndex = 16;
+            this.textRuns.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textRuns.Location = new System.Drawing.Point(302, 457);
+            this.textRuns.Name = "textRuns";
+            this.textRuns.Size = new System.Drawing.Size(327, 30);
+            this.textRuns.TabIndex = 16;
             // 
             // label2
             // 
@@ -215,13 +219,13 @@
             this.label2.TabIndex = 15;
             this.label2.Text = "Runs";
             // 
-            // textBox3
+            // textWickets
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(302, 517);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(327, 30);
-            this.textBox3.TabIndex = 18;
+            this.textWickets.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textWickets.Location = new System.Drawing.Point(302, 517);
+            this.textWickets.Name = "textWickets";
+            this.textWickets.Size = new System.Drawing.Size(327, 30);
+            this.textWickets.TabIndex = 18;
             // 
             // label3
             // 
@@ -233,44 +237,69 @@
             this.label3.TabIndex = 17;
             this.label3.Text = "Wickets";
             // 
-            // label4
+            // lbPicture
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(118, 586);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(164, 31);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Profile Picture";
+            this.lbPicture.AutoSize = true;
+            this.lbPicture.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPicture.Location = new System.Drawing.Point(109, 586);
+            this.lbPicture.Name = "lbPicture";
+            this.lbPicture.Size = new System.Drawing.Size(131, 25);
+            this.lbPicture.TabIndex = 19;
+            this.lbPicture.Text = "Profile Picture";
+            // 
+            // profilePicture
+            // 
+            this.profilePicture.ErrorImage = ((System.Drawing.Image)(resources.GetObject("profilePicture.ErrorImage")));
+            this.profilePicture.Image = ((System.Drawing.Image)(resources.GetObject("profilePicture.Image")));
+            this.profilePicture.InitialImage = null;
+            this.profilePicture.Location = new System.Drawing.Point(302, 571);
+            this.profilePicture.Name = "profilePicture";
+            this.profilePicture.Size = new System.Drawing.Size(82, 85);
+            this.profilePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.profilePicture.TabIndex = 20;
+            this.profilePicture.TabStop = false;
+            // 
+            // btnImageLoad
+            // 
+            this.btnImageLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImageLoad.Location = new System.Drawing.Point(390, 571);
+            this.btnImageLoad.Name = "btnImageLoad";
+            this.btnImageLoad.Size = new System.Drawing.Size(239, 85);
+            this.btnImageLoad.TabIndex = 21;
+            this.btnImageLoad.Text = "Image";
+            this.btnImageLoad.UseVisualStyleBackColor = true;
+            this.btnImageLoad.Click += new System.EventHandler(this.btnImageLoad_Click);
             // 
             // addPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(744, 789);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.btnImageLoad);
+            this.Controls.Add(this.lbPicture);
+            this.Controls.Add(this.textWickets);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textRuns);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPlayingRole);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSumit);
             this.Controls.Add(this.txtGender);
-            this.Controls.Add(this.txtReTypePassword);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.txtBowlingStyle);
+            this.Controls.Add(this.txtBattingStyle);
+            this.Controls.Add(this.txtBirthDay);
+            this.Controls.Add(this.txtFullName);
             this.Controls.Add(this.lbGender);
             this.Controls.Add(this.lbReTypePassword);
             this.Controls.Add(this.lbPassword);
             this.Controls.Add(this.lbemail);
             this.Controls.Add(this.lbuserName);
             this.Controls.Add(this.lbaddPayer);
+            this.Controls.Add(this.profilePicture);
             this.Name = "addPlayer";
             this.Text = "Add Player";
-            this.Load += new System.EventHandler(this.addPlayer_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,19 +314,21 @@
         private System.Windows.Forms.Label lbPassword;
         private System.Windows.Forms.Label lbReTypePassword;
         private System.Windows.Forms.Label lbGender;
-        private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.TextBox txtReTypePassword;
+        private System.Windows.Forms.TextBox txtFullName;
+        private System.Windows.Forms.TextBox txtBirthDay;
+        private System.Windows.Forms.TextBox txtBattingStyle;
+        private System.Windows.Forms.TextBox txtBowlingStyle;
         private System.Windows.Forms.TextBox txtGender;
         private System.Windows.Forms.Button btnSumit;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPlayingRole;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textRuns;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textWickets;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbPicture;
+        private System.Windows.Forms.PictureBox profilePicture;
+        private System.Windows.Forms.Button btnImageLoad;
     }
 }

@@ -62,7 +62,7 @@
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(205, 73);
             this.btnEdit.TabIndex = 2;
-            this.btnEdit.Text = "Add Player Status";
+            this.btnEdit.Text = "Player Status";
             this.btnEdit.UseVisualStyleBackColor = true;
             // 
             // btnExit

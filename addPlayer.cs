@@ -4,6 +4,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.Security.Cryptography;
+using System.Drawing;
 
 namespace Login
 {
@@ -18,10 +19,10 @@ namespace Login
 
         private void btnSumit_Click(object sender, EventArgs e)
         {
-            string entredUserName = txtUsername.Text;
-            string entredEmail = txtEmail.Text;
-            string entredPassword = txtPassword.Text;
-            string entredReTypePassword = txtReTypePassword.Text;
+            string entredUserName = txtFullName.Text;
+            string entredEmail = txtBirthDay.Text;
+            string entredPassword = txtBattingStyle.Text;
+            string entredReTypePassword = txtBowlingStyle.Text;
             string entredGender = txtGender.Text;
 
             string emailPattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
@@ -85,8 +86,24 @@ namespace Login
             }
         }
 
-        private void addPlayer_Load(object sender, EventArgs e)
+
+
+        private void btnImageLoad_Click(object sender, EventArgs e)
         {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.InitialDirectory = "c:\\";
+                openFileDialog.Filter = "Image files (*.jpg, *.jpeg, *.png, *.bmp)|*.jpg;*.jpeg;*.png;*.bmp";
+                openFileDialog.FilterIndex = 1;
+                openFileDialog.RestoreDirectory = true;
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string filePath = openFileDialog.FileName;
+
+                    btnImageLoad.Image = Image.FromFile(filePath);
+                }
+            }
 
         }
     }
