@@ -29,5 +29,10 @@ namespace Login
             addPlayer.ShowDialog();
         }
 
+        private void btnPlyerInformation_Click(object sender, EventArgs e)
+        {
+            playerInformation playerInformation = new playerInformation();
+            playerInformation.Show();
+        }
     }
 }

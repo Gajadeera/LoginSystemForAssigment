@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnAddPlayer = new System.Windows.Forms.Button();
-            this.btnShowPlayer = new System.Windows.Forms.Button();
+            this.btnPlyerInformation = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -45,15 +45,16 @@
             this.btnAddPlayer.UseVisualStyleBackColor = true;
             this.btnAddPlayer.Click += new System.EventHandler(this.btnAddPlayer_Click);
             // 
-            // btnShowPlayer
+            // btnPlyerInformation
             // 
-            this.btnShowPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowPlayer.Location = new System.Drawing.Point(127, 211);
-            this.btnShowPlayer.Name = "btnShowPlayer";
-            this.btnShowPlayer.Size = new System.Drawing.Size(205, 73);
-            this.btnShowPlayer.TabIndex = 1;
-            this.btnShowPlayer.Text = "Player List";
-            this.btnShowPlayer.UseVisualStyleBackColor = true;
+            this.btnPlyerInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlyerInformation.Location = new System.Drawing.Point(127, 211);
+            this.btnPlyerInformation.Name = "btnPlyerInformation";
+            this.btnPlyerInformation.Size = new System.Drawing.Size(205, 73);
+            this.btnPlyerInformation.TabIndex = 1;
+            this.btnPlyerInformation.Text = "Player Information";
+            this.btnPlyerInformation.UseVisualStyleBackColor = true;
+            this.btnPlyerInformation.Click += new System.EventHandler(this.btnPlyerInformation_Click);
             // 
             // btnEdit
             // 
@@ -84,7 +85,7 @@
             this.ClientSize = new System.Drawing.Size(1283, 675);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.btnShowPlayer);
+            this.Controls.Add(this.btnPlyerInformation);
             this.Controls.Add(this.btnAddPlayer);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Home";
@@ -97,7 +98,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnAddPlayer;
-        private System.Windows.Forms.Button btnShowPlayer;
+        private System.Windows.Forms.Button btnPlyerInformation;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnExit;
     }

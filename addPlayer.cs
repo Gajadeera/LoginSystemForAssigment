@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Data.SqlClient;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Windows.Forms;
-using System.Security.Cryptography;
 using System.Drawing;
+using System.Windows.Forms;
+using System.IO;
 
 namespace Login
 {
     public partial class addPlayer : Form
     {
         private const string ConnectionString = "Server=GAJADEERA\\SQLEXPRESS;Database=LoginSystem;Integrated Security=True;";
+        byte[] imageData = null;
 
         public addPlayer()
         {
@@ -19,92 +18,54 @@ namespace Login
 
         private void btnSumit_Click(object sender, EventArgs e)
         {
-            string entredUserName = txtFullName.Text;
-            string entredEmail = txtBirthDay.Text;
-            string entredPassword = txtBattingStyle.Text;
-            string entredReTypePassword = txtBowlingStyle.Text;
-            string entredGender = txtGender.Text;
-
-            string emailPattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
-
-            if (isValidEmail(entredEmail, emailPattern))
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
-                if (entredPassword == entredReTypePassword)
+                connection.Open();
+
+                string insertQuery = "INSERT INTO player (fullName, birthDay, battingStyle, bowlingStyle, playingRole, gender, runs, wickets,profilePicture) " +
+                             "VALUES (@fullName, @birthDay, @battingStyle, @bowlingStyle, @playingRole, @gender, @runs, @wickets,@imageData);";
+
+                using (SqlCommand command = new SqlCommand(insertQuery, connection))
                 {
-                    using (SqlConnection connection = new SqlConnection(ConnectionString)) ;
+                    command.Parameters.AddWithValue("@fullName", txtFullName.Text);
+                    command.Parameters.AddWithValue("@birthDay", DateTime.Parse(txtBirthDay.Text));
+                    command.Parameters.AddWithValue("@battingStyle", txtBattingStyle.Text);
+                    command.Parameters.AddWithValue("@bowlingStyle", txtBowlingStyle.Text);
+                    command.Parameters.AddWithValue("@playingRole", txtPlayingRole.Text);
+                    command.Parameters.AddWithValue("@gender", txtGender.Text);
+                    command.Parameters.AddWithValue("@runs", int.Parse(txtRuns.Text));
+                    command.Parameters.AddWithValue("@wickets", int.Parse(txtWickets.Text));
+                    command.Parameters.AddWithValue("@imageData", imageData);
 
-                    string hashedPassword = HashPassword(entredPassword);
+                    command.ExecuteNonQuery();
 
-                    const string insertQuery = "INSERT INTO Players (userName, email, password,gender) VALUES (@UserName, @Email, @Password,@Gender)";
-
-                    using (SqlConnection connection = new SqlConnection(ConnectionString))
-                    {
-                        SqlCommand command = new SqlCommand(insertQuery, connection);
-                        command.Parameters.AddWithValue("@UserName", entredUserName);
-                        command.Parameters.AddWithValue("@Email", entredEmail);
-                        command.Parameters.AddWithValue("@Password", hashedPassword);
-                        command.Parameters.AddWithValue("@ReTypePassword", entredReTypePassword);
-                        command.Parameters.AddWithValue("@Gender", entredGender);
-
-                        connection.Open();
-                        command.ExecuteNonQuery();
-                    }
-
+                    MessageBox.Show("player added Sucessfully");
                 }
             }
-            else
-            {
-                MessageBox.Show("Invalid Email");
-            }
-
         }
 
-        static bool isValidEmail(string email, string pattern)
-        {
-            return Regex.IsMatch(email, pattern);
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-
-
-        public string HashPassword(string password)
-        {
-            using (SHA256 sha256Hash = SHA256.Create())
-            {
-                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
-
-                StringBuilder builder = new StringBuilder();
-                for (int i = 0; i < bytes.Length; i++)
-                {
-                    builder.Append(bytes[i].ToString("x2"));
-                }
-                return builder.ToString();
-            }
-        }
-
-
-
-        private void btnImageLoad_Click(object sender, EventArgs e)
+        private void btnSelectImage_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
-                openFileDialog.InitialDirectory = "c:\\";
-                openFileDialog.Filter = "Image files (*.jpg, *.jpeg, *.png, *.bmp)|*.jpg;*.jpeg;*.png;*.bmp";
-                openFileDialog.FilterIndex = 1;
-                openFileDialog.RestoreDirectory = true;
+                openFileDialog.Filter = "Image Files|*.bmp;*.jpg;*.jpeg;*.png;*.gif|All Files|*.*"; 
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    string filePath = openFileDialog.FileName;
-
-                    btnImageLoad.Image = Image.FromFile(filePath);
+                    Image img = new Bitmap(openFileDialog.FileName);
+                    imageData = ImageToByteArray(img); 
                 }
             }
 
         }
+        private byte[] ImageToByteArray(Image image)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                image.Save(ms, image.RawFormat); 
+                return ms.ToArray();
+            }
+        }
+
     }
 }

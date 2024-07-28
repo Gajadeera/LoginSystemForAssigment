@@ -45,13 +45,13 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.txtPlayingRole = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textRuns = new System.Windows.Forms.TextBox();
+            this.txtRuns = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textWickets = new System.Windows.Forms.TextBox();
+            this.txtWickets = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lbPicture = new System.Windows.Forms.Label();
             this.profilePicture = new System.Windows.Forms.PictureBox();
-            this.btnImageLoad = new System.Windows.Forms.Button();
+            this.btnSelectImage = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -181,7 +181,6 @@
             this.btnCancel.TabIndex = 12;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // txtPlayingRole
             // 
@@ -201,13 +200,13 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Playing Role";
             // 
-            // textRuns
+            // txtRuns
             // 
-            this.textRuns.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textRuns.Location = new System.Drawing.Point(302, 457);
-            this.textRuns.Name = "textRuns";
-            this.textRuns.Size = new System.Drawing.Size(327, 30);
-            this.textRuns.TabIndex = 16;
+            this.txtRuns.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRuns.Location = new System.Drawing.Point(302, 457);
+            this.txtRuns.Name = "txtRuns";
+            this.txtRuns.Size = new System.Drawing.Size(327, 30);
+            this.txtRuns.TabIndex = 16;
             // 
             // label2
             // 
@@ -219,13 +218,13 @@
             this.label2.TabIndex = 15;
             this.label2.Text = "Runs";
             // 
-            // textWickets
+            // txtWickets
             // 
-            this.textWickets.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textWickets.Location = new System.Drawing.Point(302, 517);
-            this.textWickets.Name = "textWickets";
-            this.textWickets.Size = new System.Drawing.Size(327, 30);
-            this.textWickets.TabIndex = 18;
+            this.txtWickets.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWickets.Location = new System.Drawing.Point(302, 517);
+            this.txtWickets.Name = "txtWickets";
+            this.txtWickets.Size = new System.Drawing.Size(327, 30);
+            this.txtWickets.TabIndex = 18;
             // 
             // label3
             // 
@@ -259,27 +258,27 @@
             this.profilePicture.TabIndex = 20;
             this.profilePicture.TabStop = false;
             // 
-            // btnImageLoad
+            // btnSelectImage
             // 
-            this.btnImageLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImageLoad.Location = new System.Drawing.Point(390, 571);
-            this.btnImageLoad.Name = "btnImageLoad";
-            this.btnImageLoad.Size = new System.Drawing.Size(239, 85);
-            this.btnImageLoad.TabIndex = 21;
-            this.btnImageLoad.Text = "Image";
-            this.btnImageLoad.UseVisualStyleBackColor = true;
-            this.btnImageLoad.Click += new System.EventHandler(this.btnImageLoad_Click);
+            this.btnSelectImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectImage.Location = new System.Drawing.Point(390, 571);
+            this.btnSelectImage.Name = "btnSelectImage";
+            this.btnSelectImage.Size = new System.Drawing.Size(239, 85);
+            this.btnSelectImage.TabIndex = 21;
+            this.btnSelectImage.Text = "Select Image";
+            this.btnSelectImage.UseVisualStyleBackColor = true;
+            this.btnSelectImage.Click += new System.EventHandler(this.btnSelectImage_Click);
             // 
             // addPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(744, 789);
-            this.Controls.Add(this.btnImageLoad);
+            this.Controls.Add(this.btnSelectImage);
             this.Controls.Add(this.lbPicture);
-            this.Controls.Add(this.textWickets);
+            this.Controls.Add(this.txtWickets);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textRuns);
+            this.Controls.Add(this.txtRuns);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtPlayingRole);
             this.Controls.Add(this.label1);
@@ -323,12 +322,12 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.TextBox txtPlayingRole;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textRuns;
+        private System.Windows.Forms.TextBox txtRuns;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textWickets;
+        private System.Windows.Forms.TextBox txtWickets;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbPicture;
         private System.Windows.Forms.PictureBox profilePicture;
-        private System.Windows.Forms.Button btnImageLoad;
+        private System.Windows.Forms.Button btnSelectImage;
     }
 }
