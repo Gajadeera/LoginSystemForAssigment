@@ -6,7 +6,7 @@ namespace Login
 {
     public partial class Home : Form
     {
-        private Mutex mutex = new Mutex();
+        private static readonly Mutex mutex = new Mutex();
 
         public Home()
         {
@@ -23,16 +23,43 @@ namespace Login
         private void OpenAddPlayerForm()
         {
             mutex.WaitOne();
+            try
+            {
+                addPlayer addPlayerForm = new addPlayer();
+                addPlayerForm.FormClosed += (s, args) => mutex.ReleaseMutex();
+                addPlayerForm.ShowDialog();
+            }
+            catch
+            {
+                mutex.ReleaseMutex();
+            }
+        }
 
-            addPlayer addPlayer = new addPlayer();
-            addPlayer.FormClosed += (s, args) => mutex.ReleaseMutex();
-            addPlayer.ShowDialog();
+        private void OpenAddPlayerInformationForm()
+        {
+            mutex.WaitOne();
+            try
+            {
+                playerInformation playerInformationForm = new playerInformation();
+                playerInformationForm.FormClosed += (s, args) => mutex.ReleaseMutex();
+                playerInformationForm.ShowDialog();
+            }
+            catch
+            {
+                mutex.ReleaseMutex();
+            }
         }
 
         private void btnPlyerInformation_Click(object sender, EventArgs e)
         {
-            playerInformation playerInformation = new playerInformation();
-            playerInformation.Show();
+            Thread thread = new Thread(OpenAddPlayerInformationForm);
+            thread.SetApartmentState(ApartmentState.STA);
+            thread.Start();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

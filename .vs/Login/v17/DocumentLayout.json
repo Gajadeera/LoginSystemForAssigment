@@ -3,48 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|c:\\users\\dayan\\onedrive\\desktop\\my project\\login\\playerinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|solutionrelative:playerinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|c:\\users\\dayan\\onedrive\\desktop\\my project\\login\\playerinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|solutionrelative:playerinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\addplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|solutionrelative:addplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\addadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|solutionrelative:addadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|solutionrelative:home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\addadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|solutionrelative:addadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\addplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|solutionrelative:addplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|solutionrelative:home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|c:\\users\\dayan\\onedrive\\desktop\\my project\\login\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|solutionrelative:home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\playerinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|solutionrelative:playerinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\addadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|solutionrelative:addadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|solutionrelative:home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\addadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA158A19-6533-4D01-8A0B-48E886C280FA}|Login.csproj|solutionrelative:addadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,17 +50,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
               "ToolTip": "C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\Login.cs",
               "RelativeToolTip": "Login.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAAAMAAAASAAAA",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAAMAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-21T08:58:11.023Z",
               "IsPinned": true,
@@ -72,45 +68,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "playerInformation.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\playerInformation.cs",
-              "RelativeDocumentMoniker": "playerInformation.cs",
-              "ToolTip": "C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\playerInformation.cs [Design]",
-              "RelativeToolTip": "playerInformation.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T05:27:13.66Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "playerInformation.cs",
-              "DocumentMoniker": "C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\playerInformation.cs",
-              "RelativeDocumentMoniker": "playerInformation.cs",
-              "ToolTip": "C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\playerInformation.cs",
-              "RelativeToolTip": "playerInformation.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAADwv00AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T05:34:24.168Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "addPlayer.cs",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\addPlayer.cs",
               "RelativeDocumentMoniker": "addPlayer.cs",
               "ToolTip": "C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\addPlayer.cs",
               "RelativeToolTip": "addPlayer.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABkAAACLAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAACLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-25T03:51:41.675Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "addPlayer.cs [Design]",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\addPlayer.cs",
               "RelativeDocumentMoniker": "addPlayer.cs",
@@ -122,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "Home.cs [Design]",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\Home.cs",
               "RelativeDocumentMoniker": "Home.cs",
@@ -134,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
@@ -146,29 +117,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "addAdmin.cs",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\addAdmin.cs",
               "RelativeDocumentMoniker": "addAdmin.cs",
               "ToolTip": "C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\addAdmin.cs",
               "RelativeToolTip": "addAdmin.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAUwFEAAAANAAAA",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAAC4AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T04:05:10.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T04:05:10.202Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Home.cs",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\Home.cs",
               "RelativeDocumentMoniker": "Home.cs",
               "ToolTip": "C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\Home.cs",
               "RelativeToolTip": "Home.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAADgvyIAAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-21T07:50:04.521Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "playerInformation.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\playerInformation.cs",
+              "RelativeDocumentMoniker": "playerInformation.cs",
+              "ToolTip": "C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\playerInformation.cs [Design]",
+              "RelativeToolTip": "playerInformation.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T05:27:13.66Z"
             },
             {
               "$type": "Document",
@@ -179,12 +160,11 @@
               "ToolTip": "C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\addAdmin.cs [Design]",
               "RelativeToolTip": "addAdmin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T04:04:34.25Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-23T04:04:34.25Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive\\Desktop\\My Project\\Login\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",

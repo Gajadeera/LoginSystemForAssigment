@@ -29,7 +29,6 @@ namespace Login
             {
                 if (entredPassword == entredReTypePassword)
                 {
-                    using (SqlConnection connection = new SqlConnection(ConnectionString)) ;
 
                     string hashedPassword = HashPassword(entredPassword);
 
@@ -44,6 +43,8 @@ namespace Login
 
                         connection.Open();
                         command.ExecuteNonQuery();
+                        MessageBox.Show("Admin Added SucessFull");
+                        clearInputs();
                     }
 
                 }
@@ -86,6 +87,14 @@ namespace Login
         {
             addAdmin addAdmin = new addAdmin();
             addAdmin.Close();
+        }
+
+        private void clearInputs()
+        {
+            txtEmail.Clear();
+            txtPassword.Clear();
+            txtUsername.Clear();
+            txtReTypePassword.Clear();
         }
     }
 }

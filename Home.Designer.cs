@@ -75,14 +75,15 @@
             this.btnExit.TabIndex = 3;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Login.Properties.Resources.MainLogo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1283, 675);
+            this.ClientSize = new System.Drawing.Size(1773, 791);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnPlyerInformation);
