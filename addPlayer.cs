@@ -30,6 +30,7 @@ namespace Login
             {
                 if (entredPassword == entredReTypePassword)
                 {
+<<<<<<< Updated upstream
                     using (SqlConnection connection = new SqlConnection(ConnectionString)) ;
 
                     string hashedPassword = HashPassword(entredPassword);
@@ -48,6 +49,18 @@ namespace Login
                         connection.Open();
                         command.ExecuteNonQuery();
                     }
+=======
+                    command.Parameters.AddWithValue("@fullName", txtFullName.Text);
+                    command.Parameters.AddWithValue("@birthDay", DateTime.Parse(txtBirthDay.Text));
+                    command.Parameters.AddWithValue("@battingStyle", txtBattingStyle.Text);
+                    command.Parameters.AddWithValue("@bowlingStyle", txtBowlingStyle.Text);
+                    command.Parameters.AddWithValue("@playingRole", txtPlayingRole.Text);
+                    command.Parameters.AddWithValue("@gender", txtGender.Text);
+                    command.Parameters.AddWithValue("@runs", int.Parse(txtRuns.Text));
+                    command.Parameters.AddWithValue("@wickets", int.Parse(txtWickets.Text));
+                    command.Parameters.AddWithValue("@imageData", imageData);
+                    command.ExecuteNonQuery();
+>>>>>>> Stashed changes
 
                 }
             }

@@ -11,3 +11,18 @@ C:\Users\dayan\OneDrive\Desktop\My Project\Login\obj\Debug\Login.Login.resources
 C:\Users\dayan\OneDrive\Desktop\My Project\Login\obj\Debug\Login.addPlayer.resources
 C:\Users\dayan\OneDrive\Desktop\My Project\Login\obj\Debug\Login.Home.resources
 C:\Users\dayan\OneDrive\Desktop\My Project\Login\obj\Debug\Login.playerInformation.resources
+D:\Upendra\personal\Uovt\VPAssginment\LoginSystemForAssigment\bin\Debug\Login.exe.config
+D:\Upendra\personal\Uovt\VPAssginment\LoginSystemForAssigment\bin\Debug\Login.exe
+D:\Upendra\personal\Uovt\VPAssginment\LoginSystemForAssigment\bin\Debug\Login.pdb
+D:\Upendra\personal\Uovt\VPAssginment\LoginSystemForAssigment\obj\Debug\Login.csproj.AssemblyReference.cache
+D:\Upendra\personal\Uovt\VPAssginment\LoginSystemForAssigment\obj\Debug\Login.csproj.SuggestedBindingRedirects.cache
+D:\Upendra\personal\Uovt\VPAssginment\LoginSystemForAssigment\obj\Debug\Login.addAdmin.resources
+D:\Upendra\personal\Uovt\VPAssginment\LoginSystemForAssigment\obj\Debug\Login.addPlayer.resources
+D:\Upendra\personal\Uovt\VPAssginment\LoginSystemForAssigment\obj\Debug\Login.Home.resources
+D:\Upendra\personal\Uovt\VPAssginment\LoginSystemForAssigment\obj\Debug\Login.Login.resources
+D:\Upendra\personal\Uovt\VPAssginment\LoginSystemForAssigment\obj\Debug\Login.playerInformation.resources
+D:\Upendra\personal\Uovt\VPAssginment\LoginSystemForAssigment\obj\Debug\Login.Properties.Resources.resources
+D:\Upendra\personal\Uovt\VPAssginment\LoginSystemForAssigment\obj\Debug\Login.csproj.GenerateResource.cache
+D:\Upendra\personal\Uovt\VPAssginment\LoginSystemForAssigment\obj\Debug\Login.csproj.CoreCompileInputs.cache
+D:\Upendra\personal\Uovt\VPAssginment\LoginSystemForAssigment\obj\Debug\Login.exe
+D:\Upendra\personal\Uovt\VPAssginment\LoginSystemForAssigment\obj\Debug\Login.pdb
